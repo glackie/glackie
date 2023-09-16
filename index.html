@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .image-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .image-card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        <div class="image-grid">
+            <!-- Image 1 -->
+            <div class="image-card">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+
+            <!-- Image 2 -->
+            <div class="image-card">
+                <img src="image2.png" alt="Image 2">
+            </div>
+
+            <!-- Image 3 -->
+            <div class="image-card">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
+
+            <!-- Add more image cards as needed -->
+        </div>
+    </div>
+</body>
+</html>
