@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .below-container{
+                margin: 20px;
+                border: 2px springgreen;
+                padding: 10px;
+                text-align: center;
+                background-color: indianred;
+            }            
+            body {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .header{
+                text-align: center;
+                padding: 20px;  
+            }
+            .paragraph{
+                text-align: center;
+                padding: 20px; 
+                color: aqua;
+            }
+
+        </style>
+    </head>
+    <!-- for body division style we can add a background image 
+        using this - background-image: url(image1.jpg); -->
+    <body style="font-size: larger;"> <!--background-color: rgb(255, 255, 255) -->
+        <title>Title </title>
+        <div class="header">
+            <h1>My First Heading</h1> 
+        </div>
+        <div class="paragraph">
+            <p>My first<br> paragraph.</p>
+            <p style="color: crimson;"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+                 title="This is a meme" target="_blank"> This a hyper
+                 link practice </a> inside a <del>paragraph</del> and <em>some</em> 
+                 <ins>other</ins> text <sub>types</sub> and <sup>more</sup> </p>
+        </div>
+        <div class="below-container">
+            <a href="index.html"><img src="image2.png" alt="suderman" 
+                title="index webpage"></a> 
+                <!--<img src="image1.jpg" alt="spiral stairs" width="1024" height="1920"> -->
+            <button onclick="document.location='index.html'" style="color: darkmagenta;"> Redirect onclick button </button>
+        </div> 
+        <div class="form-type">
+            <form action="/index.html">
+                <label for="name">Enter your name: </label><input type="text" id="name"><br>
+                <label for="date">Enter your birthday: </label><input type="date" id="date"><br>
+                <label for="radio">Are you Human? </label> <input type="radio" id="radio"><br>
+                <lu>Select your gender </lu>
+                <label for="checkbox1 ">Male </label> <input type="checkbox" id="checkbox1">
+                <label for="checkbox1 ">Female </label> <input type="checkbox" id="checkbox2"><br>
+                <label for="button">Just a button </label> <input type="button" id="button"> <br>
+                <label for="submit"> Submit your form</label> <input type="submit" id="submit">
+            </form>
+        </div>        
+    </body>
+</html>
