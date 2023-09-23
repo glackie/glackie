@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Login Practice with PHP </title>
+        <style>
+            body {
+                background-image: url(background-image.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                /**
+                just used this code to align my div box 
+                in vertical centre but did not work
+
+                display: flex;
+                justify-content: center; -  Center horizontally 
+                align-items: center;  Center vertically
+
+                below code i have got from CHATGPT
+
+                **/ 
+                margin: 0;
+                display: flex;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                min-height: 100vh; /* 100% viewport height */
+            }
+
+            .login-container {
+            background-color: rgba(218, 192, 241, 0.473);
+            width: max-content;
+            
+            margin: auto; /** If i set this to any other 
+            the div box moves to the left hand side so 
+            auto is the best value here**/
+
+            /** **/ 
+
+            padding: 10px;
+            border: 2px solid rgba(245, 76, 76, 0.582);
+            box-shadow: 10px;
+            border-radius: 10px;
+            text-align: center;
+            }
+
+            .login-container h2 {
+            color: #333;
+            }
+
+            .submit:hover{
+                background-color: rgba(199, 255, 70, 0.801);
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>Login Form </h2>
+            <form action="login2.php" method="post">
+                <label for="uname">Username: </label>
+                <input type="text" class="uname" name="uname" 
+                id="uname" required size="50px"> 
+                <br><br>
+                <label for="pass">Password:  </label>
+                <input type="password" class="pass" name="pass" 
+                id="pass" required size="50px">
+                <br><br>
+                <input type="submit" class="submit" value="login-button">
+            </form>
+        </div>
+    </body>
+</html>
+

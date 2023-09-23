@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Webpage title
+        </title>
+        <style>
+            /* Define a class to apply margin and border styles */
+            .styled-div {
+                margin: 20px; /* Set the margin around the element */
+                border: 2px solid #000; /* Set a solid black border */
+                padding: 10px; /* Optional: Add padding inside the border */
+            }
+            .styled-div2 {
+                margin: 2%; /* Set the margin around the element */
+                border: 2px solid #000; /* Set a solid black border */
+                padding: 10px; /* Optional: Add padding inside the border */
+                text-align: center;
+            }
+        </style>
+        <script>
+
+            var today = new Date();
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+            function dateboi() {
+                document.getElementById('dati').innerHTML = date;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="styled-div">
+            <div id="dati"> 
+                This will change to today's date 
+                <button onclick="dateboi()"> View Date</button>
+            </div>
+            </div>
+        <div class="styled-div2">
+            <div id="bulb" class="bulb">
+                <br><img  id="bulbb" src="bulb-onn.jpg" alt="bulb-onn"><br>
+                <button onclick="document.getElementById('bulbb').src='bulb-off.jpg'">Click Here to turn it off</button> <br><br>
+                <button onclick="document.getElementById('bulbb').src='bulb-onn.jpg'"> Click Here to turn it on </button> <br>
+            </div>
+        </div>
+    </body>
+</html>

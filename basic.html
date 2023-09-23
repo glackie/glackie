@@ -23,7 +23,10 @@
                 padding: 20px; 
                 color: aqua;
             }
-
+            .form-type1{
+                margin: 20px;
+                border: 2px black;
+            }
         </style>
     </head>
     <!-- for body division style we can add a background image 
@@ -47,7 +50,7 @@
             <button onclick="document.location='index.html'" style="color: darkmagenta;"> Redirect onclick button </button>
         </div> 
         <div class="form-type1">
-            <form action="/index.html">
+            <form action="index.html" method="post">
                 <label for="name">Enter your name: </label><input type="text" id="name"><br>
                 <label for="date">Enter your birthday: </label><input type="date" id="date"><br>
                 <label for="radio">Are you Human? </label> <input type="radio" id="radio"><br>
@@ -61,14 +64,35 @@
         <div class="form-type2">
             <form action="index.html" method="post">
                 <br>
-                <label for="name">Enter your name: </label><input type="text" id="name"><br>
-                <label for="date">Enter your birthday: </label><input type="date" id="date"><br>
-                <label for="radio">Are you Human? </label> <input type="radio" id="radio"><br>
-                <lu>Select your gender </lu>
-                <label for="checkbox1 ">Male </label> <input type="checkbox" id="checkbox1">
-                <label for="checkbox1 ">Female </label> <input type="checkbox" id="checkbox2"><br>
-                <label for="button">Just a button </label> <input type="button" id="button"> <br>
-                <label for="submit"> Submit your form</label> <input type="submit" id="submit">
+                <label for="cars">Select a car</label>
+                <select id="cars" size="2" multiple>
+                    <option value="Nissan">Nissan</option>
+                    <option value="TATA">TATA</option>
+                    <option value="Audi" selected>Audi</option>
+                </select><br>
+                <textarea name="message" rows="10" cols="20"> </textarea>
+                <textarea name="message-css" style="height: 200px;width: 200px;"> </textarea><br>
+                <br>
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+                <br><br>
+                <fieldset>
+                    <legend>Personalia:</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="Chirag"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Gajra"><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+                <br>
+                <label for="browsers"> Select your browser: </label>
+                <input list="browsers" size="50">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
             </form>            
         </div>
     </body>
